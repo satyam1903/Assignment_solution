@@ -1,0 +1,17 @@
+1) You will need to create a simple express app backed by the accompnaying json file as the data source.
+2) You may store it in database of your choice
+3) Please create the following endpoints. They are ordered in a specific way to enahnce comprehension and implementation:
+
+-> GET /operator -> List all operators 
+-> GET /operatorGameType -> List all unique game types -> List all operatorGameType based on operator
+-> GET /operatorName?operator=Fanduel&operatorGameType=Single Game -> List all operatorNames based on operator and operatorGameType
+
+-> GET /players?operator=&operatorGameType=&operatorName=? -> list all players based on operator, operator game type and operator name
+-> GET /players/best?operator=&operatorGameType=&operatorName=? - Return the highest points player.
+
+The goal of this assignment is to test:
+1) How you analyze unknown data
+2) Basics of nodejs api development
+3) Simple JS iteration and filter
+
+Bonus: Unexpected query parameters should be validated, and appropriate error thrown.
